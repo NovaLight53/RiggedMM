@@ -8,8 +8,8 @@ import pandas as pd
 
  
 def apikey(playertag):
-    """ Takes in a player tag and outputs all their battle log data.""" #You'll need to make your own api key on developer.clashroyale.com
-    key = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjE5NDA1MDllLTNiNmEtNDdhZC04NjczLTQ0YWZkY2NjZmFhNSIsImlhdCI6MTYwOTk5MTIxNiwic3ViIjoiZGV2ZWxvcGVyLzQ3YTk0NDRkLWE2MzQtMzFkMy00NjY0LTMwOGIyNWQyNjg1NCIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI3My4yMjUuMC4zMyIsIjczLjQyLjEzMC4xODMiXSwidHlwZSI6ImNsaWVudCJ9XX0.yvymjLs6yJ__N8nZfSKWvB36-f15Vtn1Fw6fJ7Exn6t0sd8Ca20fwqyuza0QzQP80JDirLu_aihopCMZ3jOH-g'
+    """ Takes in a player tag and outputs all their battle log data.""" 
+    key = #You'll need to make your own api key on developer.clashroyale.com
     base_url = "https://api.clashroyale.com/v1"
     endpoint = "/players/%23" + playertag + "/battlelog/" 
     request = urllib.request.Request(base_url+endpoint, None, {"Authorization": "Bearer %s" % key})
